@@ -13,13 +13,13 @@ import {
   Text,
   useColorScheme,
 } from 'react-native';
+import Home from './screen/Home';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <SafeAreaView>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Text>Hello</Text>
+      <Home />
     </SafeAreaView>
   );
 }
